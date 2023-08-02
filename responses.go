@@ -51,6 +51,30 @@ type PayWithCardResponse struct {
 		AcceptEncoding  string `json:"accept-encoding"`
 		UserAgent       string `json:"user-agent"`
 	} `json:"headers"`
-	Message  string `json:"message,omitempty"`
-	DateTime string `json:"dateTime,omitempty"`
+}
+
+type GetTransactionInfoResponse struct {
+	Response struct {
+		Amount         float64  `json:"amount"`
+		Log            []string `json:"log"`
+		Sandbox        bool     `json:"sandbox"`
+		CanBeCommitted bool     `json:"canBeCommitted"`
+		Type           string   `json:"type"`
+		TransactionID  string   `json:"transactionId"`
+		CommitDate     string   `json:"commitDate"`
+		FinalAmount    float64  `json:"finalAmount"`
+		AmountRefunded float64  `json:"amountRefunded"`
+		Currency       string   `json:"currency"`
+		Commission     float64  `json:"commission"`
+		Refundable     bool     `json:"refundable"`
+		Refunded       float64  `json:"refunded"`
+		HasSplit       bool     `json:"hasSplit"`
+		CreateDate     string   `json:"createDate"`
+		Status         string   `json:"status"`
+	} `json:"response"`
+}
+
+type ErrorResponse struct {
+	Message  string `json:"message"`
+	DateTime string `json:"dateTime"`
 }

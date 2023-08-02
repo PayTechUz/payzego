@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Muhammadali-Akbarov/payzego"
+	"github.com/paytechuz/payzego"
 )
 
 func main() {

@@ -1,3 +1,3 @@
-module github.com/Muhammadali-Akbarov/payzego
+module github.com/paytechuz/payzego
 
 go 1.20
