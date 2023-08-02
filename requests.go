@@ -14,3 +14,14 @@ type PayWithCardRequest struct {
 	APISecret string          `json:"apiSecret"`
 	Data      PayWithCardData `json:"data"`
 }
+
+type GetTransactionInfoData struct {
+	TransactionID string `json:"transactionId"`
+}
+
+type GetTransactionInfoRequest struct {
+	Method    string                 `json:"method"`
+	APIKey    string                 `json:"apiKey"`
+	APISecret string                 `json:"apiSecret"`
+	Data      GetTransactionInfoData `json:"data"`
+}
