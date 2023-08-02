@@ -3,7 +3,7 @@
 This MVP project helps for implementing <a href="https://docs.payze.io/reference/getting-started">payze-doc</a>.
 
 # Installation
-1 - `go get -v github.com/Muhammadali-Akbarov/payzego`
+1 - `go get -v github.com/paytechuz/payzego`
 
 ## Example
 ```go
